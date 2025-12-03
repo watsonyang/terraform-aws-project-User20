@@ -4,7 +4,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      owner = "userX" # Replace with your user number
+      owner = "user20" # Replace with your user number
     }
   }
 }
@@ -31,6 +31,7 @@ resource "aws_instance" "my_instance" {
   instance_type = var.instance_type
 
   tags = {
-    Name = "userX"
+    Name = "user20"
+    Lab = "lab6"
   }
 }
